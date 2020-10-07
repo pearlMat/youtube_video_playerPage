@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="responsive.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Trending</a>
+        <a href="#">Subscriptions</a>
+        <a href="#">Library</a>
+        <a href="#">History</a>
+        <a href="#">Your videos</a>
+      </div>
+      
+    <header>
+      
+        <nav>
+            <ul>
+                <li class="side-bar">
+                    <img src="images/hamburger.svg" alt="Side bar button" class="side-bar-btn" onclick="openNav()">
+                    <div><a href="https://www.youtube.com" target="_blank"><img src="images/youtube-logo.svg" alt="youtube logo" height="25px" class="side-bar-btn"></a></div> 
+                </li>
+                
+                <li>
+                    <form class="search-bar">
+                        <input type="text" placeholder="Search">
+                        <button class="search-btn">
+                            <img src="images/search.svg" alt="search button" height="20px">
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <div class="app-btns">
+                       
+                        <img src="images/create.svg" alt="create button" class="app-btn">
+                        <img src="images/apps.svg" alt="apps button" class="app-btn">
+                        <img src="images/notifications.svg" alt="notifications button" class="app-btn">
+                        <img src="images/profile.jpeg" alt="profile button" class="profile-pic app-btn">
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+  }
+    </script>
+</body>
+</html>
